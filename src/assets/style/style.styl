@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Jua&subset=korean)
+font-size = 14px
+
+*
+    margin 0
+    padding 0
+    box-sizing border-box
+    font font-size Jua, sans-serif
+
+body
+    background-color #9bdbf2
+    #main
+        width: 100%
+        height auto
+        .cloud
+            position absolute
+            z-index: 1
+
+.cloud1
+    width 110px
+    right 0
+    top 100px
+    animation cloud1 20s infinite linear
+
+.cloud2
+    width 110px
+    top 200px
+    left 50px
+    animation cloud2 35s infinite linear
+
+.cloud3
+    width: 60px
+    top: 70px
+    left: 10px
+
+.cloud4
+    width: 80px
+    top: 200px
+    left: 100px
+
+.cloud5
+    width: 80px
+    top: 100px
+    right: 10px
+
+@keyframes cloud1{
+    0%{
+        right 0
+    }
+    100%{
+        right 100%
+    }
+}
+@keyframes cloud2{
+    0%{
+        left 0
+    }    
+    100%{
+        left 100%    
+    }
+} 
+
+
+#header
+    width 90%
+    height 40px
+    margin 0 auto
+    margin-top 15px
+    background-color #fee395
+    .subject
+        color #ceae5a
+        font-size 1.5rem
+        line-height 40px
+        padding-left 15px
+
+.sub-header 
+    position relative
+    width 25%
+    height 35px
+    margin 20px auto  
+    img 
+        width 70px
+        position absolute
+        z-index: 1
+        top -18px
+        left -25px
+
+.sub-tit 
+    clip-path polygon(0% 0%, 100% 0%, 95% 50%, 100% 100%, 0% 100%)
+    text-align center
+    background-color #5cbce6
+    .sub-text, span
+        color #ffffff
+        font-size 1.3em
+        line-height 35px
+        span
+            color #d6eacd
+
+.project-tit
+    width 40%
+    margin 0 auto
+    position relative
+    .logo 
+        display block
+        margin 35px auto
+        z-index 10
+    .airplane
+        position absolute
+        left -75px
+        top 175px
+        transform rotate(15deg)
+        animation airplane 3s infinite alternate
+
+@keyframes airplane{
+    to{
+        transform rotate(20deg)
+    }
+    from{
+        transform rotate(5deg)
+    }
+}
